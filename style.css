@@ -1,0 +1,40 @@
+.jumbotron-image {
+    background-image: url('bar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white
+}
+
+.butao{
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 3 rem;
+}
+
+.jumbotron-image a {
+    color: white;
+}
+
+.jumbo-text { 
+    text-align: center;
+    margin-top: 300px;
+}
+
+.my-card {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.my{
+    background-color: rgb(48, 44, 44);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
