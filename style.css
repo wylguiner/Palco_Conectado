@@ -1,3 +1,7 @@
+body {
+    background-color: #212529 !important;
+}
+
 .jumbotron-image {
     background-image: url('img/bar.jpg');
     background-size: cover;
@@ -33,15 +37,9 @@
     text-align: center;
 }
 
-.my{
-    background-color: rgb(48, 44, 44);
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
 .services {
     height: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .col-bar {
@@ -63,6 +61,8 @@
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px) { 
@@ -113,9 +113,46 @@
 #conheca {
     font-size: 30px;
     font-weight: 500;
+    color: white;
 }
 
 .my-modal i {
     font-size: 30px;
     width: 37.5px;
+}
+
+#modalBarBody  {
+    background-image: url('img/bar.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+#modalBandasBody  {
+    background-image: url('img/musicos.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.bares {
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+}
+
+.bandas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#foot {
+    border-top: 2px solid white;
+}
+
+#foot a{
+    color: white;
+}
+
+#foot p{
+    color: white;
 }
