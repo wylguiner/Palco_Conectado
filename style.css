@@ -1,158 +1,207 @@
-body {
+html, body {
+    height: 100%;
     background-color: #212529 !important;
 }
 
-.jumbotron-image {
-    background-image: url('img/bar.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white
-}
-
-.butao{
-    margin-bottom: 10px;
-}
-
-.jumbotron {
-    padding-top: 10px;
-    padding-bottom: 3 rem;
-}
-
-.jumbotron-image a {
-    color: white;
-}
-
-.jumbo-text { 
-    text-align: center;
-    margin-top: 300px;
-}
-
-.my-card {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    align-items: center;
-    text-align: center;
-}
-
-.services {
-    height: 400px;
-    margin-bottom: 40px;
-}
-
-.col-bar {
-    background-image: url(img/bar.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 340px;
-}
-
-.col-bar img {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-.col-bar p {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-@media screen and (max-width: 600px) { 
-    .col-bar p {
-        margin-top: 200px;
+/* Navbar */
+    .navbar {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
     }
-}
-
-
-.col-bar:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
-.col-band {
-    background-image: url(img/musicos.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 340px;
-}
-
-.col-band img {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-
-.col-band p {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-}
-
-@media screen and (max-width: 600px) { 
-    .col-band p {
-        margin-top: 200px;
+    .navegation a {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
     }
-}
+    .navegation a:hover {
+        color: red;
+        font-size: 23px;
+    }
+    .navbar-toggler-icon {
+        background-color: white;
+    }
+    .nav-content {
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+    
+/* Jumbotron */
+    .jumbotron {
+        background-image: url('img/bar.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-shadow: 4px 4px black;
+        height: 800px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }      
+    .jumbotron button{
+        margin-bottom: 10px;
+    }
+    .jumbo-text {
+        margin-top: auto;
+        backdrop-filter: brightness(95%); 
+    }
 
-.col-band:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
+/* Serviços */
+    .services {
+        height: 400px;
+        margin-top: 40px;
+    }
+    #conheca {
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+    }
+    .services p {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 150px 0; 
+    }
 
-#conheca {
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-}
+    @media screen and (max-width: 600px) { 
+        .services p {
+            margin-top: 200px;
+            padding: 0;
+        }
+    }
 
-.my-modal i {
-    font-size: 30px;
-    width: 37.5px;
-}
+    /* Coluna do bar */
+    .col-bar {
+        background-image: url(img/bar.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 340px;
+        overflow: hidden;
+    }
+    .col-bar:hover {
+        opacity: 80%;
+    }
+    .col-bar img { /* Pra poder a coluna inteira ser um link */ 
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .col-bar a {
+        width: inherit;
+        height: inherit;
+    }
 
-#modalBarBody  {
-    background-image: url('img/bar.jpg');
-    background-size: cover;
-    background-position: center center;
-    color: white;
-}
+    /* Coluna da banda */
+    .col-band {
+        background-image: url(img/musicos.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 340px;
+        overflow: hidden;
+    }    
+    .col-band:hover {
+        opacity: 80%;
+    }
+    .col-band img {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .col-band a {
+        width: inherit;
+        height: inherit;
+    }
 
-#modalBandasBody  {
-    background-image: url('img/musicos.jpg');
-    background-size: cover;
-    background-position: center center;
-    color: white;
-}
+/* Modal */
+    .my-modal i {
+        font-size: 30px;
+        width: 37.5px;
+    }
 
-.bares {
-    border-bottom: 2px solid white;
-    padding-bottom: 40px;
-}
+    #modalBarBody  {
+        background-image: url('img/bar.jpg');
+        background-size: cover;
+        background-position: center center;
+        color: white;
+    }
 
-.bandas {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+    #modalBandasBody  {
+        background-image: url('img/musicos.jpg');
+        background-size: cover;
+        background-position: center center;
+        color: white;
+    }
 
-#foot {
-    border-top: 2px solid white;
-}
+/* Carousel + cards */ 
+    .bares {
+        border-bottom: 2px solid white;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
 
-#foot a{
-    color: white;
-}
+    .bandas {
+        border-bottom: 2px solid white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
-#foot p{
-    color: white;
-}
+    .my-card {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+    }    
+
+/* Footer */
+    #foot {
+        border-top: 2px solid white;
+    }
+
+    #foot a{
+        color: white;
+    }
+
+    #foot p{
+        color: white;
+    }
+
+    .cadastro {
+        display: flex;
+        background-image: url(img/fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+/* Formulario Cadastro */
+    .form-cad {
+        max-width: 530px;
+        padding: 15px;               
+    }
+
+    .form-texto {
+        color: black;
+    }
+
+    #band-sign {
+        display: none;
+    }
+    #bar-sign {
+        visibility: visible;
+    }
+
+    #band-sign, #bar-sign {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;  
+        padding: 20px;
+    }
+
